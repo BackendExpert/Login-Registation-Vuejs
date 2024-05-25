@@ -20,7 +20,7 @@
         <LatestModels />
     </div>
     <div class="" id="ContactInfo">
-        <LatestModels />
+        <AppFooter />
     </div>
 </template>
 
@@ -28,6 +28,7 @@
     import AppHeader from './AppHeader.vue';
     import AboutAs from './AboutAs.vue';
     import LatestModels from './LatestModels.vue';
+    import AppFooter from './AppFooter.vue';
 
     export default {
         name: "HomePage",
@@ -35,6 +36,7 @@
             AppHeader,
             AboutAs,
             LatestModels,
+            AppFooter,
         }
     }
 </script>
