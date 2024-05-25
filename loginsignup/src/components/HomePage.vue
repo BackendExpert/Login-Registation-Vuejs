@@ -16,16 +16,22 @@
     <div class="" id="AboutUs">
         <AboutAs />
     </div>
+    <div class="" id="LatestModels">
+        <LatestModels />
+    </div>
 </template>
 
 <script>
     import AppHeader from './AppHeader.vue';
     import AboutAs from './AboutAs.vue';
+    import LatestModels from './LatestModels.vue';
+
     export default {
         name: "HomePage",
         components: {
             AppHeader,
             AboutAs,
+            LatestModels,
         }
     }
 </script>
