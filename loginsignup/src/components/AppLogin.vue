@@ -36,16 +36,33 @@ export default {
 
     // method for send data to backend
     methods: {
-        HeadleLogin() {
-            axios.post('http://localhost:8081/Login', this.formData)
-            .then(res => {
-                if(res.data.Status === "Success"){
-                    alert("Registation Successfull")
+        async HeadleLogin () {
+            try{
+                const res = await axios.post('http://localhost:8081/SignIn', SignInData)
+
+                const loginToken = res.data.Token;
+
+                //store token in localstorage
+                localStorage.setItem('LoginToken', loginToken)
+
+                if(res.data.Msg === "Success"){
+                    //get and store login user role and email
+                    const userRole = res.data.LoginUser[0].Role;
+                    const userEmail = res.data.LoginUser[0].Email;
+
+                    //store data in localstore so that use secureLocalStorage
+                    secureLocalStorage.setItem("Login1", userRole);
+                    secureLocalStorage.setItem("login2", userEmail);
+
                 }
                 else{
                     alert(res.data.Error)
                 }
-            })
+            }
+            catch(err){
+                console.log(err)
+            }
+        
         }
     }
 }
