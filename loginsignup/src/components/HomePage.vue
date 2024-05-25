@@ -3,7 +3,7 @@
         <div class="" id="home">
             <AppHeader />
             <div class="text-center my-16" >
-                <h1 class="text-white lg:text-5xl">Buy Your Dream car</h1>
+                <h1 class="text-white lg:text-5xl site-title">Buy Your Dream car</h1>
             </div>
         </div>
     </div>
