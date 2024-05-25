@@ -49,6 +49,10 @@ app.use(express.static('public'));
 
 // all endpoint start
 
+app.post('/Login', (req, res) => {
+    console.log(req.body)
+})
+
 
 // all endpoints end
 
