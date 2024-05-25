@@ -51,6 +51,18 @@ app.use(express.static('public'));
 
 app.post('/Login', (req, res) => {
     console.log(req.body)
+
+    const tableName = "users"
+    const columnData = {Email:req.body.email}
+
+    JkMysql.SearchData(connection, tableName, columnData, (result) => {
+        if(result.length === 0 ){
+
+        } 
+        else{
+            return res.json({Error: 'User Already in Database'})
+        }
+    })
 })
 
 
