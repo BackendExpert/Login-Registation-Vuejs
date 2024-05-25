@@ -12,8 +12,8 @@
                 </p>
 
                 <div class="flex">
-                    <button class="bg-white text-black py-2 px-8 mx-2 rounded-full">Login</button>
-                    <button class="bg-white text-black py-2 px-8 mx-2 rounded-full">SignUp</button>
+                    <button @click="ClickButtonValue('Login')" class="bg-white text-black py-2 px-8 mx-2 rounded-full">Login</button>
+                    <button @click="ClickButtonValue('SignUp')" class="bg-white text-black py-2 px-8 mx-2 rounded-full">SignUp</button>
                 </div>
             </div>
         </div>
