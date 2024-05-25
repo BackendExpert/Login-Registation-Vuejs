@@ -1,2 +1,3 @@
-# Install with Tailwind css
+# Vue.js + Tailwind css Project
+
 
