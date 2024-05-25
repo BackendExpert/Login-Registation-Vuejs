@@ -12,8 +12,8 @@
                 </p>
 
                 <div class="flex">
-                    <button>Login</button>
-                    <button>Login</button>
+                    <button class="bg-white text-black py-2 px-8 mx-2 rounded-full">Login</button>
+                    <button class="bg-white text-black py-2 px-8 mx-2 rounded-full">Login</button>
                 </div>
             </div>
         </div>
