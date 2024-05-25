@@ -52,20 +52,28 @@ app.use(express.static('public'));
 app.post('/SignUp', (req, res) => {
     console.log(req.body)
 
-    // const tableName = "users"
-    // const columnData = {Email:req.body.email}
+    const tableName = "users"
+    const columnData = {Email:req.body.email}
 
-    // JkMysql.SearchData(connection, tableName, columnData, (result) => {
-    //     if(result.length === 0 ){
-    //         const tableName = "users"
-    //         const data = {
+    JkMysql.SearchData(connection, tableName, columnData, (result) => {
+        if(result.length === 0 ){
+            bcrypt.hash(req.body.password, 10, (err, HashPass) => { 
+                if(HashPass){
+                    const tableName = "users"
+                    const data = {
+                        Username: req.body.username,
+                        Email: req.body.email,
+                        Password: HashPass,
+                        Role: "Admin"
+                    }
+                }
+            })
 
-    //         }
-    //     } 
-    //     else{
-    //         return res.json({Error: 'User Already in Database'})
-    //     }
-    // })
+        } 
+        else{
+            return res.json({Error: 'User Already in Database'})
+        }
+    })
 })
 
 
