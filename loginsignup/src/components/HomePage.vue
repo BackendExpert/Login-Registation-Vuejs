@@ -37,6 +37,19 @@
             AboutAs,
             LatestModels,
             AppFooter,
+        },
+        // data property for store click value 
+        data() {
+            return {
+                clickedValue: ''
+            }
+        },
+        // method for catch the click value
+        methods: {
+            ClickButtonValue(value){
+                // update the data property with click value
+                this.clickedValue = value
+            }
         }
     }
 </script>
