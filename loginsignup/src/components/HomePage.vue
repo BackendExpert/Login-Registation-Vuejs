@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-cover bg-center h-screen" :style="{ backgroundImage: `linear-gradient(to right, #001B3A, rgba(0,0,0,0.9)), url('https://wallpapercave.com/wp/wp12420121.jpg')` }">
+    <div class="bg-cover bg-center h-screen" :style="{ backgroundImage: `linear-gradient(to right, #001B3A, rgba(0,0,0,0.4)), url('https://wallpapercave.com/wp/wp12420121.jpg')` }">
         <div class="">
             <AppHeader />
         </div>
