@@ -19,7 +19,7 @@
 </template>
 
 <script>
-// import axios from 'axios';
+import axios from 'axios';
 
 export default {
     name: "AppLogin",
@@ -35,19 +35,19 @@ export default {
     },
 
     // method for send data to backend
-    // methods: {
-    //     HeadleLogin() {
-    //         axios.post('http://localhost:8081/Login', this.formData)
-    //         .then(res => {
-    //             if(res.data.Status === "Success"){
-    //                 alert("Registation Successfull")
-    //             }
-    //             else{
-    //                 alert(res.data.Error)
-    //             }
-    //         })
-    //     }
-    // }
+    methods: {
+        HeadleLogin() {
+            axios.post('http://localhost:8081/Login', this.formData)
+            .then(res => {
+                if(res.data.Status === "Success"){
+                    alert("Registation Successfull")
+                }
+                else{
+                    alert(res.data.Error)
+                }
+            })
+        }
+    }
 }
 
 
