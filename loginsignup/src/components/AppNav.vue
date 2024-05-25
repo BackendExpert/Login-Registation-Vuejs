@@ -32,6 +32,7 @@
   
   <script>
   export default {
+    name: "AppNav",
     data() {
       return {
         isOpen: false,

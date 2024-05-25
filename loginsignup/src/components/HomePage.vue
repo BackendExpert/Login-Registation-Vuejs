@@ -8,6 +8,7 @@
 
 <script>
     import AppHeader from './AppHeader.vue';
+    import AppNav from './AppNav.vue'
     export default {
         name: "HomePage",
         components: {
