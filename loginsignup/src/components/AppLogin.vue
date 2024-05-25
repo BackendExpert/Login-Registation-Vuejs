@@ -1,7 +1,7 @@
 <template>
     <div class="">
         <div class="">
-            <form>
+            <form @submit.prevent="HeadleLogin">
                 <div class="">
                     <label for="" class="text-xl block my-2">Email : </label>
                     <input type="email" name="" id="" class="h-12 2-full bg-white text-gray-700 rounded pl-2" required placeholder="Enter Email Address">
@@ -19,7 +19,30 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
-    name: "AppLogin"
+    name: "AppLogin",
+    // data property for Login data
+
+    data() {
+        return {
+            formData: {
+                username: '',
+                email: '',
+                password: ''
+            }            
+        }
+    },
+
+    // method for send data to backend
+    methods: {
+        HeadleLogin() {
+            axios.post()
+        }
+    }
 }
+
+
+
 </script>
