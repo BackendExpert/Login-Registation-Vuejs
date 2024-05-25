@@ -57,7 +57,10 @@ app.post('/Login', (req, res) => {
 
     JkMysql.SearchData(connection, tableName, columnData, (result) => {
         if(result.length === 0 ){
-
+            const tableName = "users"
+            const data = {
+                
+            }
         } 
         else{
             return res.json({Error: 'User Already in Database'})
