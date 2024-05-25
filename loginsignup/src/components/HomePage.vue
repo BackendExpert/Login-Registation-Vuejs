@@ -16,8 +16,8 @@
                     <button @click="ClickButtonValue('SignUp')" class="bg-white text-black py-2 px-8 mx-2 rounded-full">SignUp</button>
                 </div>
                 <!-- <p>Clicked Button: {{ clickedValue }}</p> -->
-                <div class="" v-if="clickedValue === 'Login'" >Login to System</div>
-                <div class="" v-if="clickedValue === 'SignUp'" >Welcome to System</div>
+                <div class="" v-if="clickedValue === 'Login'" ><AppLogin /></div>
+                <div class="" v-if="clickedValue === 'SignUp'" ><AppSignUp /></div>
 
             </div>
         </div>
@@ -38,6 +38,9 @@
     import AboutAs from './AboutAs.vue';
     import LatestModels from './LatestModels.vue';
     import AppFooter from './AppFooter.vue';
+    import AppLogin from './AppLogin.vue';
+    import AppSignUp from './AppSignUp.vue';
+    
 
     export default {
         name: "HomePage",
@@ -46,6 +49,8 @@
             AboutAs,
             LatestModels,
             AppFooter,
+            AppLogin,
+            AppSignUp,
         },
         // data property for store click value 
         data() {
