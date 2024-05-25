@@ -40,6 +40,7 @@ export default {
         XMarkIcon,
         ListBulletIcon
     },
+    // for open close the nav bar when mobile screen
     data() {
         return {
             isNavOpen: false,
