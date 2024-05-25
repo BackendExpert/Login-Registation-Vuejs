@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full bg-none py-8 lg:px-40 md:px-26 px-4 text-white lg:text-xl ">
+    <div class="w-full bg-none py-8 lg:px-40 md:px-26 px-4 text-white lg:text-xl">
         <div class="flex justify-between">
             <div class="flex">
                 <BuildingOffice2Icon class="icon"/>  
@@ -19,12 +19,12 @@
                 <a href="#" class="pt-2 text-white lg:text-xl hover:border-b-2 ">Contact</a>
             </div>
         </div>
-        <div :class="{'block': isNavOpen, 'hidden': !isNavOpen}" class="sm:hidden">
+        <div :class="{'block': isNavOpen, 'hidden': !isNavOpen}" class="sm:hidden absolute text-center ml-4 mt-4 rounded-xl px-16 bg-white text-black" >
             <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="#" class="block py-4 text-white lg:text-xl px-8">Home</a>
-                <a href="#" class="block py-4 text-white lg:text-xl px-8">About us</a>
-                <a href="#" class="block py-4 text-white lg:text-xl px-8">Latest Models</a>
-                <a href="#" class="block py-4 text-white lg:text-xl px-8">Contact</a>
+                <a href="#" class="block py-4 lg:text-xl px-8">Home</a>
+                <a href="#" class="block py-4 lg:text-xl px-8">About us</a>
+                <a href="#" class="block py-4 lg:text-xl px-8">Latest Models</a>
+                <a href="#" class="block py-4 lg:text-xl px-8">Contact</a>
             </div>
         </div>
     </div>

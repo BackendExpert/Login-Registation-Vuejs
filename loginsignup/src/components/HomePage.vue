@@ -2,9 +2,9 @@
     <div class="bg-cover bg-center h-screen min-h-screen" :style="{ backgroundImage: `linear-gradient(to right, #001B3A, rgba(0,0,0,0.4)), url('https://wallpapercave.com/wp/wp2707503.jpg')` }">
         <div class="" id="home">
             <AppHeader />
-            <div class="text-center my-16 text-white mx-16" >
-                <h1 class="lg:text-5xl site-title">Buy Your Dream car</h1>
-                <p class="py-8">with JKCARs</p>
+            <div class="text-center md:my-16 text-white md:mx-16 mx-8 " >
+                <h1 class="lg:text-5xl md:text-2xl text-2xl site-title">Buy Your Dream car</h1>
+                <p class="md:py-8 ">with JKCARs</p>
 
                 <p class="my-4">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. In quidem, autem facere molestias modi dolorum iste. Hic nam vero obcaecati distinctio exercitationem suscipit, illum nobis porro, quis fuga fugiat numquam!
