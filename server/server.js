@@ -66,7 +66,11 @@ app.post('/SignUp', (req, res) => {
                         Password: HashPass,
                         Role: "Admin"
                     }
-                    JkMysql.insertData(connection, tableName, )
+                    JkMysql.insertData(connection, tableName, data, (result) => {
+                        if(result) {
+                            return res.json({Status: "Success"})
+                        }
+                    })
                 }
             })
 
