@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-cover bg-center h-screen my-16" :style="{ backgroundImage: `url('https://wallpaperaccess.com/full/13642.jpg')` }">
+    <div class="bg-cover bg-center h-screen" :style="{ backgroundImage: `url('https://wallpaperaccess.com/full/13642.jpg')` }">
         <div class="">
             <AppHeader />
         </div>
