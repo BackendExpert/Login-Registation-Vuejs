@@ -13,6 +13,9 @@
             </div>
         </div>
     </div>
+    <div class="" id="AboutUs">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure corrupti repellendus sunt cumque, fugit minus expedita nostrum, ipsum, tenetur odit soluta amet ullam molestias repudiandae inventore aliquam. Molestiae, nihil?
+    </div>
 </template>
 
 <script>
