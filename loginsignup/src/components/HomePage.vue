@@ -14,16 +14,18 @@
         </div>
     </div>
     <div class="" id="AboutUs">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure corrupti repellendus sunt cumque, fugit minus expedita nostrum, ipsum, tenetur odit soluta amet ullam molestias repudiandae inventore aliquam. Molestiae, nihil?
+        <AboutAs />
     </div>
 </template>
 
 <script>
     import AppHeader from './AppHeader.vue';
+    import AboutAs from './AboutAs.vue';
     export default {
         name: "HomePage",
         components: {
             AppHeader,
+            AboutAs,
         }
     }
 </script>
