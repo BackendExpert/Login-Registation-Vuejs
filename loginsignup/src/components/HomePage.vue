@@ -1,8 +1,8 @@
 <template>
-    <div class="">
-        asdasdasd
-        <AppHeader />
-        this is Homepage
+    <div class="bg-green-500 bg-cover bg-center h-screen">
+        <div class="">
+            <AppHeader />
+        </div>
     </div>
 </template>
 
