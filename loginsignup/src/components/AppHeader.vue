@@ -1,6 +1,7 @@
 <template>
-    <div class="w-full bg-none py-8 px-16 text-white lg:text-xl ">
-      <BuildingOffice2Icon class="text-sm text-gray-500"/>  JK Cars
+    <div class="w-full bg-none py-8 px-16 text-white lg:text-xl flex">
+      <BuildingOffice2Icon class="icon"/>  
+      <p class="pt-2 pl-2">JK Cars</p>
     </div>
 </template>
 
@@ -15,3 +16,12 @@ export default {
     
 }
 </script>
+
+<style>
+.icon {
+    width: 36px;
+    height: 36px;
+    color: white;
+    margin-left: 12px;
+}
+</style>
