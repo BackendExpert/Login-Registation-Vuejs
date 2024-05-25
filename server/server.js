@@ -66,6 +66,7 @@ app.post('/SignUp', (req, res) => {
                         Password: HashPass,
                         Role: "Admin"
                     }
+                    JkMysql.insertData(connection, tableName, )
                 }
             })
 
