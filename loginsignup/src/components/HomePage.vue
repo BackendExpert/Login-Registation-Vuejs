@@ -10,6 +10,11 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. In quidem, autem facere molestias modi dolorum iste. Hic nam vero obcaecati distinctio exercitationem suscipit, illum nobis porro, quis fuga fugiat numquam!
                     Illo commodi fugit ullam officiis at id sit cumque inventore quo est facere dolores consequuntur ad distinctio aut esse doloremque, assumenda eaque tenetur qui provident dolorum rerum beatae a? Iste.
                 </p>
+
+                <div class="flex">
+                    <button>Login</button>
+                    <button>Login</button>
+                </div>
             </div>
         </div>
     </div>
