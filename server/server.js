@@ -36,7 +36,7 @@ const upload = multer({
 
 
 // make connection between server and mysql database
-const connection = JkMysql.ConnectToDatabase('localhost', 'root', '1234', 'db_cms')
+const connection = JkMysql.ConnectToDatabase('localhost', 'root', '1234', 'db_vue')
 
 // configurate email sending 
 const transporter = JkMysql.SendEmailConfig("Gmail", process.env.EMAIL_USER, process.env.EMAIL_PASSWORD)
