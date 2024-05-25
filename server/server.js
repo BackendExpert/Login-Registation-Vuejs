@@ -81,6 +81,13 @@ app.post('/SignUp', (req, res) => {
     })
 })
 
+// Login
+
+app.post('/Login',(req, res) => {
+    console.log(req.body)
+
+    
+})
 
 // all endpoints end
 
