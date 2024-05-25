@@ -86,7 +86,40 @@ app.post('/SignUp', (req, res) => {
 app.post('/Login',(req, res) => {
     console.log(req.body)
 
-    
+    const tableName = "users"
+    const columnData = { Email: req.body.email }
+
+    // console.log(tableName, columnData)
+
+    JkMysql.SelectData(connection, tableName, columnData, (result) => {
+        if(result.length === 0){
+            // console.log("Error")
+            return res.json({Error: "User Not Found in Database..."})
+        }
+        else{
+            // console.log(result[0].Password)
+            // console.log("good to go")
+            const password = req.body.password
+            
+            bcrypt.compare(password, result[0].Password, (err, PassMatch) => {
+                if(err) throw err
+
+                if(PassMatch) {
+                    //generate JWT Token
+                    const token = jwt.sign(
+                        {email: result[0].Email, role: result[0].Role},
+                        'your-secret-key',
+                        {expiresIn: '1h'}
+                    );
+                    res.json({Token: token, Msg: "Success", LoginUser:result})
+                    console.log(result)
+                }
+                else{
+                    return res.json({Error: "Password Not Match"})
+                }
+            })
+        }
+    })
 })
 
 // all endpoints end
