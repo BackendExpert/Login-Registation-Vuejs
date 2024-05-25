@@ -6,7 +6,7 @@
                 <h1 class="lg:text-5xl md:text-2xl text-2xl site-title">Buy Your Dream car</h1>
                 <p class="md:py-8 ">with JKCARs</p>
 
-                <p class="my-4">
+                <p class="my-4 md:visibale hidden">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. In quidem, autem facere molestias modi dolorum iste. Hic nam vero obcaecati distinctio exercitationem suscipit, illum nobis porro, quis fuga fugiat numquam!
                     Illo commodi fugit ullam officiis at id sit cumque inventore quo est facere dolores consequuntur ad distinctio aut esse doloremque, assumenda eaque tenetur qui provident dolorum rerum beatae a? Iste.
                 </p>

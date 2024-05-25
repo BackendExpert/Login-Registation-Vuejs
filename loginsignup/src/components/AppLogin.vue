@@ -21,7 +21,7 @@
 <script>
 import axios from 'axios';
 import  secureLocalStorage  from  "react-secure-storage"
-import { useRouter } from 'vue-router';
+
 
 export default {
     name: "AppLogin",
@@ -41,10 +41,9 @@ export default {
         async HeadleLogin () {
             
             try{
-                const res = await axios.post('http://localhost:8081/SignIn', this.formData)
+                const res = await axios.post('http://localhost:8081/Login', this.formData)
 
                 const loginToken = res.data.Token;
-                const router = useRouter();
                 //store token in localstorage
                 localStorage.setItem('LoginToken', loginToken)
 
@@ -56,7 +55,7 @@ export default {
                     //store data in localstore so that use secureLocalStorage
                     secureLocalStorage.setItem("Login1", userRole);
                     secureLocalStorage.setItem("login2", userEmail);
-                    router.push('/');
+                    this.$router.push({ name: "DashBoard" });
                 }
                 else{
                     alert(res.data.Error)
