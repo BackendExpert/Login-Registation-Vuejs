@@ -31,13 +31,9 @@
   </template>
   
   <script>
-  import { BuildingOffice2Icon } from '@heroicons/vue/24/solid';
   
   export default {
     name: "AppNav",
-    components: {
-        BuildingOffice2Icon
-    },
     data() {
       return {
         isOpen: false,
