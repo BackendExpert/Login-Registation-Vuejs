@@ -21,8 +21,8 @@
         </div>
         <div :class="{'block': isNavOpen, 'hidden': !isNavOpen}" class="sm:hidden absolute text-center ml-4 mt-4 rounded-xl px-16 bg-white text-black" >
             <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="#" class="block py-4 lg:text-xl px-8">Home</a>
-                <a href="#" class="block py-4 lg:text-xl px-8">About us</a>
+                <a href="#home" class="block py-4 lg:text-xl px-8">Home</a>
+                <a href="#AboutUs" class="block py-4 lg:text-xl px-8">About us</a>
                 <a href="#" class="block py-4 lg:text-xl px-8">Latest Models</a>
                 <a href="#" class="block py-4 lg:text-xl px-8">Contact</a>
             </div>
