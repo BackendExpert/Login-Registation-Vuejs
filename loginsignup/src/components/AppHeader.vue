@@ -13,7 +13,7 @@
                 </button>
             </div>
             <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-                <a href="#" class="pt-2 text-white lg:text-xl hover:border-b-2 ">Home</a>
+                <a href="#home" class="pt-2 text-white lg:text-xl hover:border-b-2 ">Home</a>
                 <a href="#" class="pt-2 text-white lg:text-xl hover:border-b-2 ">About us</a>
                 <a href="#" class="pt-2 text-white lg:text-xl hover:border-b-2 ">Latest Models</a>
                 <a href="#" class="pt-2 text-white lg:text-xl hover:border-b-2 ">Contact</a>
