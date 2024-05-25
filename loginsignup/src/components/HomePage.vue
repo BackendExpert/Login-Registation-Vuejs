@@ -15,6 +15,8 @@
                     <button @click="ClickButtonValue('Login')" class="bg-white text-black py-2 px-8 mx-2 rounded-full">Login</button>
                     <button @click="ClickButtonValue('SignUp')" class="bg-white text-black py-2 px-8 mx-2 rounded-full">SignUp</button>
                 </div>
+                <p>Clicked Button: {{ clickedValue }}</p>
+
             </div>
         </div>
     </div>
