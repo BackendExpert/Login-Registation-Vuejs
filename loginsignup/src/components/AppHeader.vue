@@ -16,7 +16,7 @@
                 <a href="#home" class="pt-2 text-white lg:text-xl hover:border-b-2 ">Home</a>
                 <a href="#AboutUs" class="pt-2 text-white lg:text-xl hover:border-b-2 ">About us</a>
                 <a href="#LatestModels" class="pt-2 text-white lg:text-xl hover:border-b-2 ">Latest Models</a>
-                <a href="#" class="pt-2 text-white lg:text-xl hover:border-b-2 ">Contact</a>
+                <a href="#ContactInfo" class="pt-2 text-white lg:text-xl hover:border-b-2 ">Contact</a>
             </div>
         </div>
         <div :class="{'block': isNavOpen, 'hidden': !isNavOpen}" class="sm:hidden absolute text-center ml-4 mt-4 rounded-xl px-16 bg-white text-black" >
