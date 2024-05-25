@@ -20,10 +20,12 @@
             </div>
         </div>
         <div :class="{'block': isNavOpen, 'hidden': !isNavOpen}" class="sm:hidden">
-            <a href="#" class="pt-2 text-white lg:text-xl hover:border-b-2 ">Home</a>
-            <a href="#" class="pt-2 text-white lg:text-xl hover:border-b-2 ">About us</a>
-            <a href="#" class="pt-2 text-white lg:text-xl hover:border-b-2 ">Latest Models</a>
-            <a href="#" class="pt-2 text-white lg:text-xl hover:border-b-2 ">Contact</a>
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#" class="block py-4 text-white lg:text-xl px-8">Home</a>
+                <a href="#" class="block py-4 text-white lg:text-xl px-8">About us</a>
+                <a href="#" class="block py-4 text-white lg:text-xl px-8">Latest Models</a>
+                <a href="#" class="block py-4 text-white lg:text-xl px-8">Contact</a>
+            </div>
         </div>
     </div>
 </template>
