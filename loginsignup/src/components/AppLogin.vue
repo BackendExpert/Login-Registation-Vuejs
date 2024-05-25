@@ -10,6 +10,9 @@
                     <label for="" class="text-xl block my-2">Password : </label>
                     <input type="password" name="" id="" class="h-12 2-full bg-white text-gray-700 rounded pl-2" required placeholder="Enter Password">
                 </div>
+                <div class="">
+                    <button type="submit" class="bg-green-500 my-4 py-2 px-8 rounded text-white">Login</button>
+                </div>
             </form>
         </div>
     </div>
