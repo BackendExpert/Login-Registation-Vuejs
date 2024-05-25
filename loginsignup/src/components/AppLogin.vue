@@ -39,7 +39,7 @@ export default {
     methods: {
         async HeadleLogin () {
             try{
-                const res = await axios.post('http://localhost:8081/SignIn', SignInData)
+                const res = await axios.post('http://localhost:8081/SignIn', this.formData)
 
                 const loginToken = res.data.Token;
 
