@@ -11,7 +11,7 @@
                     Illo commodi fugit ullam officiis at id sit cumque inventore quo est facere dolores consequuntur ad distinctio aut esse doloremque, assumenda eaque tenetur qui provident dolorum rerum beatae a? Iste.
                 </p>
 
-                <div class="flex">
+                <div class="flex text-center">
                     <button class="bg-white text-black py-2 px-8 mx-2 rounded-full">Login</button>
                     <button class="bg-white text-black py-2 px-8 mx-2 rounded-full">Login</button>
                 </div>
