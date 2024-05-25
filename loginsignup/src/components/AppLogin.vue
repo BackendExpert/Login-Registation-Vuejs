@@ -4,7 +4,7 @@
             <form @submit.prevent="HeadleLogin">
                 <div class="">
                     <label for="" class="text-xl block my-2">Email : </label>
-                    <input type="email" name="" id="" class="h-12 2-full bg-white text-gray-700 rounded pl-2" required placeholder="Enter Email Address">
+                    <input type="email" name="" v-model="formData.email" id="" class="h-12 2-full bg-white text-gray-700 rounded pl-2" required placeholder="Enter Email Address">
                 </div>
                 <div class="">
                     <label for="" class="text-xl block my-2">Password : </label>
@@ -28,7 +28,6 @@ export default {
     data() {
         return {
             formData: {
-                username: '',
                 email: '',
                 password: ''
             }            
@@ -38,7 +37,7 @@ export default {
     // method for send data to backend
     methods: {
         HeadleLogin() {
-            axios.post()
+            axios.post('http://localhost:8081/Login', this.formData)
         }
     }
 }
