@@ -1,6 +1,6 @@
 <template>
-    <div class="">
-        <div class="md:grid gird-cols-3 gap-4">
+    <div class="px-16">
+        <div class="md:grid grid-cols-3 gap-4 my-4">
             <div class="lg:text-3xl text-xl text-gray-500 font-semibold">
                 <h1 class="">JKCars</h1>
             </div>
