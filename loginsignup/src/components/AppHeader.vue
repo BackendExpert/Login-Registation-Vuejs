@@ -1,5 +1,5 @@
 <template>
-    <div class="">
+    <div class="w-full bg-none">
         Hi is header
     </div>
 </template>
