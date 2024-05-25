@@ -3,9 +3,7 @@ import HomePage from './components/HomePage.vue'
 
 
 const routes = [
-  { path: '/', component: Home },
-  { path: '/about', component: About },
-  { path: '/contact', component: Contact }
+  { path: '/', component: HomePage },
 ];
 
 const router = createRouter({
