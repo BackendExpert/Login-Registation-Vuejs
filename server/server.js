@@ -49,7 +49,7 @@ app.use(express.static('public'));
 
 // all endpoint start
 
-app.post('/Login', (req, res) => {
+app.post('/SignUp', (req, res) => {
     console.log(req.body)
 
     const tableName = "users"
@@ -59,7 +59,7 @@ app.post('/Login', (req, res) => {
         if(result.length === 0 ){
             const tableName = "users"
             const data = {
-                
+
             }
         } 
         else{
