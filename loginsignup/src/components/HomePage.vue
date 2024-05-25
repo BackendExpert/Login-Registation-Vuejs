@@ -19,6 +19,9 @@
     <div class="" id="LatestModels">
         <LatestModels />
     </div>
+    <div class="" id="ContactInfo">
+        <LatestModels />
+    </div>
 </template>
 
 <script>
